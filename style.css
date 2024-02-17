@@ -98,3 +98,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
+@media screen and (max-width: 412px) {
+    body{
+        height: 94vh;
+    }
+}
