@@ -2,18 +2,24 @@ body{
     background-color: black;
     color: #ffffff;
     height: 97vh;
+    font-family: Uncut Sans,sans-serif;
+}
+.loading{
+    font-size: 8vw;
+}
+.hidden{
+    opacity: 0;
 }
 .intr{
     z-index: 1;
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
     padding: 10px;
 }
 .det{
-    font-weight: 800;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -37,6 +43,7 @@ body{
     align-items: center;
 }
 .nam h1{
+    font-weight: 0;
     font-size: 8vw;
     line-height: 0px;
 }

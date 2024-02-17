@@ -1,3 +1,33 @@
+window.onload = function(){   
+    let count = 0;
+    function ShowCounter() {
+      if (count < 101) {
+          $("#spnNumber").text(count);
+          count++;
+  
+      } else if (count == 100) {
+        $("#preloader").slideUp();
+        $("#spnNumber").remove();
+        clearInterval(interval);
+  
+      }
+  
+    }
+    var interval = setInterval(function() {
+      ShowCounter();
+          
+    }, 20);
+  };
+  setTimeout(()=>{
+    document.getElementById("era").style.display = 'flex';
+    setTimeout(()=>{
+        document.getElementById("loading...").style.display = 'none';
+        document.getElementById("era").classList.remove('hidden');
+        document.getElementById("era").style.transition=" all 2s";
+    },100)
+    $("era").fadeIn();
+  },2400);
+  
 var now =  new Date();
 var datetime = now.toLocaleString();
 document.getElementById("datetime").innerHTML = datetime;
