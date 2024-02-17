@@ -20,7 +20,7 @@ body{
     padding: 10px;
 }
 .nav img,.nav{
-    width: 80vw;
+    width: 380px;
     border-radius: 10px;
     align-self: center;
 }
@@ -44,7 +44,7 @@ body{
     text-shadow: 0px 0px 20px rgb(136, 136, 136);
 }
 .det p{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 .det2{
     text-align: center;
