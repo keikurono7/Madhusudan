@@ -2,7 +2,7 @@ body{
     background-color: black;
     color: #ffffff;
     height: 97vh;
-    font-family: Uncut Sans,sans-serif;
+    font-family: sans-serif;
 }
 .loading{
     font-size: 8vw;
@@ -15,28 +15,42 @@ body{
     position: relative;
     display: none;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100%;
     padding: 10px;
+}
+.nav img,.nav{
+    border-radius: 10px;
+    align-self: center;
 }
 .det{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.det1, .det2{
+.det1{
     position: relative;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #807e7e;
     box-shadow: 5px 5px 5px #cccacb;
     margin: 10px;
     transition: all 0.3s ease;
 }
-.det1:hover,.det2:hover,.nam h1:hover,.nam button:hover{
+.det1:hover,.nam h1:hover,.nam button:hover{
     top: 3px;
     box-shadow: inset 0px 0px 10px 3px rgb(255, 255, 255);
     text-shadow: 0px 0px 20px rgb(136, 136, 136);
+}
+.det p{
+    font-size: 2vw;
+}
+.det2{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #ffffff;
 }
 .nam{
     display: flex;
@@ -47,7 +61,7 @@ body{
     font-size: 8vw;
     line-height: 0px;
 }
-.nam button{
+.nam button, .men button{
     border: none;
     background-color: #807e7e;
     color: #ffff;
@@ -59,11 +73,11 @@ body{
     box-shadow: 5px 5px 5px #cccacb;
     transition: all 0.3s ease;
 }
-.nam button:hover {
+.nam button:hover,.men button:hover {
     box-shadow: inset 0px 0px 10px 3px #ffffff;
     top: 3px;
 }
-.nam button:active {
+.nam button:active,.men button:active {
     box-shadow: none;
     top: 5px;
 }
@@ -74,7 +88,7 @@ body{
 .men{
     margin: 0;
     height: 60%;
-    transform: translateX(-400%);
+    transform: translate(-400%,30%);
     font-size: 5vw;
     text-align: center;
     display: none;
