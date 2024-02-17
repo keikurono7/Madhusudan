@@ -20,6 +20,7 @@ body{
     padding: 10px;
 }
 .nav img,.nav{
+    width: 60vw;
     border-radius: 10px;
     align-self: center;
 }
