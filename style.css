@@ -107,7 +107,7 @@ button:active{
     }
 }
 .proj{
-    height: 100%;
+    height: 90vh;
     transform: translate(300%,0%);
     display: none;
     align-items: center;
