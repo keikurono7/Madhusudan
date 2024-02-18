@@ -44,14 +44,14 @@ function translateFunction1(){
         document.getElementById("menup").style.display = 'flex';
     },500);
     setTimeout(()=>{
-        document.getElementById("menup").style.transform = 'translate(0%,30%)';
+        document.getElementById("menup").style.transform = 'translate(0%,20%)';
         document.getElementById("menup").style.transition=" all 2s";
     },600);
     
 }
 
 function translateFunction2(){
-    document.getElementById("menup").style.transform = 'translate(-400%,30%)';
+    document.getElementById("menup").style.transform = 'translate(-400%,20%)';
     document.getElementById("menup").style.transition=" all 3s";
     setTimeout(()=>{
         document.getElementById("era").style.display = 'flex';
@@ -66,3 +66,30 @@ function translateFunction2(){
         document.getElementById("down").style.transition=" all 2s";
     },600);
 }
+
+function openProject(){
+  document.getElementById("menup").style.transform = 'translate(-400%,20%)';
+    document.getElementById("menup").style.transition=" all 3s";
+    setTimeout(()=>{
+      document.getElementById("proj").style.display = 'flex';
+      document.getElementById("menup").style.display = 'none';
+  },500);
+  setTimeout(()=>{
+    document.getElementById("proj").style.transform = 'translate(0%,0%)';
+    document.getElementById("proj").style.transition=" all 3s";
+},600);
+}
+
+function backproj(){
+  document.getElementById("proj").style.transform = 'translate(300%,0%)';
+    document.getElementById("proj").style.transition=" all 3s";
+    setTimeout(()=>{
+      document.getElementById("proj").style.display = 'none';
+      document.getElementById("menup").style.display = 'flex';
+  },600);
+  setTimeout(()=>{
+    document.getElementById("menup").style.transform = 'translate(0%,20%)';
+    document.getElementById("menup").style.transition=" all 3s";
+},650);
+}
+

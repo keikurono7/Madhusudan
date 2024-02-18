@@ -2,7 +2,7 @@ body{
     background-color: black;
     color: rgb(255, 253, 255);
     height: 90vh;
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 .loading{
     font-size: 8vw;
@@ -30,10 +30,12 @@ body{
     justify-content: space-between;
 }
 .det1{
+    align-self: center;
+    height: max-content;
     position: relative;
     padding: 10px;
     border-radius: 10px;
-    background-color: #807e7e;
+    background-color: rgb(82,80,82);
     box-shadow: 5px 5px 5px #cccacb;
     margin: 10px;
     transition: all 0.3s ease;
@@ -57,14 +59,15 @@ body{
     display: flex;
     align-items: center;
 }
-.nam h1{
+.nam h1, .proj h1{
     font-weight: 0;
     font-size: 8vw;
     line-height: 0px;
 }
-.nam button, .men button{
+button{
+    font-family: 'Courier New', Courier, monospace;
     border: none;
-    background-color: #807e7e;
+    background-color: rgb(82,80,82);
     color: #ffff;
     padding: 10px 20px;
     font-size: 3vw;
@@ -74,11 +77,11 @@ body{
     box-shadow: 5px 5px 5px #cccacb;
     transition: all 0.3s ease;
 }
-.nam button:hover,.men button:hover {
+button:hover{
     box-shadow: inset 0px 0px 10px 3px #ffffff;
     top: 3px;
 }
-.nam button:active,.men button:active {
+button:active{
     box-shadow: none;
     top: 5px;
 }
@@ -88,7 +91,7 @@ body{
 }
 .men{
     margin: 0;
-    height: 60%;
+    height: 80%;
     transform: translate(-400%,30%);
     font-size: 5vw;
     text-align: center;
@@ -102,4 +105,31 @@ body{
     body{
         height: 94vh;
     }
+}
+.proj{
+    transform: translate(300%,0%);
+    display: none;
+    align-items: center;
+}
+.proj img, .blocks figcaption{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.proj h2,.proj button{
+    margin: 8px;
+    height: max-content;
+}
+
+.blocks{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.block1, .block2,.block3{
+    border-radius: 10px;
+    padding-bottom: 60px;
 }

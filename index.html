@@ -21,15 +21,35 @@
             </div>
         </div>
         <div class="nam" id="down">
-            <h1>Madhusudan</h1><button onClick="translateFunction1()">click me</button>
+            <h1>MADHUSUDAN</h1><button onClick="translateFunction1()">click me</button>
         </div>
     </div>
     <div class="men" id="menup">
         <h1>CONTENTS</h1>
-        ABOUT<br>
-        PROJECTS<br>
-        CONTACTS<br>
+        <button onClick="openAbout()">ABOUT</button><br>
+        <button onClick="openProject()">PROJECTS</button><br>
+        <button onClick="openContact()">CONTACTS</button><br>
         <button onClick="translateFunction2()">Go Back</button>
+    </div>
+    <div class="abt" id="abt">
+        <div class="im">
+
+        </div>
+        <div class="wrt">
+
+        </div>
+    </div>
+    <div class="proj" id="proj">
+        <div class="blocks">
+            <h1>PROJECTS</h1>
+            <a><div class="block1"><img src="monte.png"><figcaption><h2>Monte Carlo Sim</h2>Provides a simulation of finding Pi value using the monte carlo method</figcaption></div></a>
+            <a><div class="block2"><img src="ttb.png"><figcaption><h2>Binary Truth Table</h2>A python program to find binary truth table for given boolean expression(still needs a bit of work)</figcaption></div></a>
+            <a><div class="block3"><img src=""><figcaption><h2>More to be added</h2></figcaption></div></a>
+            <button onClick="backproj()">Go Back</button>
+        </div>
+    </div>
+    <div class="cnt" id="cnt">
+
     </div>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
