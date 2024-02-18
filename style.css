@@ -14,18 +14,18 @@ body{
     z-index: 1;
     position: relative;
     display: none;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     height: 100%;
     padding: 10px;
 }
 .nav img,.nav{
-    margin: 5px;
     width: 380px;
     border-radius: 10px;
     align-self: center;
 }
 .det{
+    height: max-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,10 +57,13 @@ body{
     border-color: rgb(255, 253, 255);
 }
 .nam{
+    height: max-content;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 .nam h1, .proj h1{
+    align-self: left;
     font-weight: 0;
     font-size: 8vw;
     line-height: 0px;
@@ -102,13 +105,12 @@ button:active{
     flex-wrap: wrap;
     justify-content: center;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     body{
         height: 94vh;
     }
 }
 .proj{
-    height: 90vh;
     transform: translate(300%,0%);
     display: none;
     align-items: center;
@@ -117,7 +119,9 @@ button:active{
     width: 300px;
     border-radius: 10px;
 }
-
+.proj h1{
+    margin: 50px;
+}
 .proj h2,.proj button{
     margin: 8px;
     height: max-content;
