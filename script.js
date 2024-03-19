@@ -44,7 +44,12 @@ function translateFunction1(){
         document.getElementById("menup").style.display = 'flex';
     },500);
     setTimeout(()=>{
-        document.getElementById("menup").style.transform = 'translate(0%,20%)';
+        if(window.innerHeight > window.innerWidth){
+          document.getElementById("menup").style.transform = 'translate(0%,10%)';
+        }
+        else{
+          document.getElementById("menup").style.transform = 'translate(0%,20%)';
+        }
         document.getElementById("menup").style.transition=" all 2s";
     },600);
     
@@ -81,7 +86,7 @@ function openProject(){
 }
 
 function backproj(){
-  document.getElementById("proj").style.transform = 'translate(300%,0%)';
+  document.getElementById("proj").style.transform = 'translate(-300%,0%)';
     document.getElementById("proj").style.transition=" all 3s";
     setTimeout(()=>{
       document.getElementById("proj").style.display = 'none';
@@ -91,5 +96,18 @@ function backproj(){
     document.getElementById("menup").style.transform = 'translate(0%,20%)';
     document.getElementById("menup").style.transition=" all 3s";
 },650);
+}
+
+function openContacts(){
+  document.getElementById("menup").style.transform = 'translate(-400%,20%)';
+    document.getElementById("menup").style.transition=" all 3s";
+    setTimeout(()=>{
+      document.getElementById("proj").style.display = 'flex';
+      document.getElementById("menup").style.display = 'none';
+  },500);
+  setTimeout(()=>{
+    document.getElementById("proj").style.transform = 'translate(0%,0%)';
+    document.getElementById("proj").style.transition=" all 3s";
+},600);
 }
 

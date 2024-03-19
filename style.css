@@ -96,7 +96,7 @@ button:active{
 .men{
     margin: 0;
     height: 80%;
-    transform: translate(-400%,30%);
+    transform: translate(-400%,20%);
     font-size: 5vw;
     text-align: center;
     display: none;
@@ -105,13 +105,10 @@ button:active{
     flex-wrap: wrap;
     justify-content: center;
 }
-@media screen and (max-width: 430px) {
-    body{
-        height: 94vh;
-    }
-}
+
 .proj{
-    transform: translate(300%,0%);
+    overflow: hidden;
+    transform: translate(-300%,0%);
     display: none;
     align-items: center;
 }
@@ -135,7 +132,31 @@ button:active{
     justify-content: space-around;
     align-items: center;
 }
-.block1, .block2,.block3{
+.block{
     border-radius: 10px;
     padding-bottom: 60px;
+}
+@media only screen and (orientation:portrait) {
+    body{
+        height: 94vh;
+    }
+    .det2 p{
+        font-size: 20px;
+    }
+    .nam{
+        display: flex;
+        flex-direction: column;
+    }
+    .nam h1, .nam button{
+        font-size:50px;
+    }
+    .men{
+        font-size:30px;
+    } 
+    .men button{
+        font-size: 40px;
+    }
+    .blocks, .blocks button{
+        font-size: 20px;
+    }
 }
