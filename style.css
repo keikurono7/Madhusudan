@@ -93,6 +93,14 @@ button:active{
     color: white;
     height: auto;
 }
+.not{
+    background-color: black;
+    box-shadow: 0px 0px 0px 2px#cccacb;
+}
+.not:hover{
+    box-shadow: 0px 0px 10px 3px #ffffff;
+    top:0;
+}
 .men{
     margin: 0;
     height: 80%;
@@ -132,9 +140,14 @@ button:active{
     justify-content: space-around;
     align-items: center;
 }
+.blocks h1{
+    width: 100%;
+}
 .block{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0pc 0px 2px white;
     border-radius: 10px;
-    padding-bottom: 60px;
 }
 @media only screen and (orientation:portrait) {
     body{
